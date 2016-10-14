@@ -20,7 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZB6-Xy-SEf">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZB6-Xy-SEf">
+                                <frame key="frameInset" minX="16" minY="80" width="343" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf4-zK-97u">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -47,6 +48,9 @@
                                             <outletCollection property="gestureRecognizers" destination="CLr-In-nCI" appends="YES" id="j5z-Ij-md4"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="wdy-nG-e6Z" customClass="RatingControl" customModule="FoodTracker4_0" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4XC-Od-iyf" firstAttribute="leading" secondItem="ZB6-Xy-SEf" secondAttribute="leading" id="OIY-1M-DkO"/>
