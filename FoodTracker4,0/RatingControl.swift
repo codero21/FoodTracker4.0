@@ -22,11 +22,18 @@ class RatingControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        let filledStarImage = UIImage(named: "filledStar")
+        let emptyStarImage = UIImage(named: "emptyStar")
+        
         for _ in 0..<starCount {
             
             let button = UIButton()
             
-            button.backgroundColor = UIColor.red
+            button.setImage(emptyStarImage, for: .normal)
+            button.setImage(filledStarImage, for: .selected)
+            button.setImage(filledStarImage, for: [.highlighted, .selected])
+            
+            button.adjustsImageWhenHighlighted = false
             
             // Tracks button clicks
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for:
@@ -42,7 +49,6 @@ class RatingControl: UIView {
         // Set the button's width and height to a square the size of the frame's height.
         // let buttonSize = Int(frame.size.height)
         let buttonSize = 44
-        
         
         var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
         
