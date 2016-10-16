@@ -13,7 +13,6 @@
 		E3BF5E151DAD9B67007CC13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF5E141DAD9B67007CC13D /* AppDelegate.swift */; };
 		E3BF5E171DAD9B67007CC13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF5E161DAD9B67007CC13D /* ViewController.swift */; };
 		E3BF5E1A1DAD9B67007CC13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BF5E181DAD9B67007CC13D /* Main.storyboard */; };
-		E3BF5E1C1DAD9B67007CC13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3BF5E1B1DAD9B67007CC13D /* Assets.xcassets */; };
 		E3BF5E1F1DAD9B67007CC13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BF5E1D1DAD9B67007CC13D /* LaunchScreen.storyboard */; };
 		E3BF5E2A1DAD9B67007CC13D /* FoodTracker4_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BF5E291DAD9B67007CC13D /* FoodTracker4_0Tests.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		E3BF5E141DAD9B67007CC13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3BF5E161DAD9B67007CC13D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3BF5E191DAD9B67007CC13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E3BF5E1B1DAD9B67007CC13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3BF5E1E1DAD9B67007CC13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3BF5E201DAD9B67007CC13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3BF5E251DAD9B67007CC13D /* FoodTracker4,0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FoodTracker4,0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +87,6 @@
 				E3A146A91DB306C200D9EADB /* Meal.swift */,
 				E3BF5E181DAD9B67007CC13D /* Main.storyboard */,
 				E3A146AB1DB404D200D9EADB /* MealTableViewCell.swift */,
-				E3BF5E1B1DAD9B67007CC13D /* Assets.xcassets */,
 				E3BF5E1D1DAD9B67007CC13D /* LaunchScreen.storyboard */,
 				E3BF5E201DAD9B67007CC13D /* Info.plist */,
 			);
@@ -191,7 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3BF5E1F1DAD9B67007CC13D /* LaunchScreen.storyboard in Resources */,
-				E3BF5E1C1DAD9B67007CC13D /* Assets.xcassets in Resources */,
 				E3BF5E1A1DAD9B67007CC13D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
