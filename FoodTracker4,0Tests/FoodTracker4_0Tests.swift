@@ -25,8 +25,7 @@ class FoodTracker4_0Tests: XCTestCase {
         
         // Failure cases.
         let badRating = Meal(name: "Really bad Rating", photo: nil, rating: -1)
-        XCTAssertNotNil(badRating)
-        
+        XCTAssertNil(badRating, "Negative ratings are invalid, be positive")
     }
     
 }
