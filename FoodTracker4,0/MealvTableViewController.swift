@@ -8,22 +8,19 @@
 
 import UIKit
 
-class MealvTableViewController: UITableViewController {
+class MealTableViewController: UITableViewController {
     // MARK: Properties
     var meals = [Meal]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // Load the sample data.
+        loadSampleMeals()
     }
 
     // This is a helper method to load sample data into the app.
-    open func loadSampleMeals() {
+    func loadSampleMeals() {
         let photo1 = UIImage(named: "meal1")!
         let meal1 = Meal(name: "Caprese Salad", photo: photo1, rating: 4)!
         
@@ -32,6 +29,7 @@ class MealvTableViewController: UITableViewController {
         
         let photo3 = UIImage(named: "meal3")!
         let meal3 = Meal(name: "Pasta with Meatballs", photo: photo3, rating: 3)!
+        
         
         // meals += [meal1, meal2, meal3]
         meals += [meal1, meal2, meal3]
@@ -56,12 +54,9 @@ class MealvTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         // Table view cells are reused and should be dequeued using a cell identifier.
-        let cellIdentifier = "MealTableViewCell"
+        // var cellIdentifier = "MealTableViewCell"
         
-        // let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath) as! MealTableViewCell
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MealTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath) as! MealTableViewCell
         
         // Fetches the appropriate meal for the data source layout.
         // This code fetches the appropriate meal in the meals array.
