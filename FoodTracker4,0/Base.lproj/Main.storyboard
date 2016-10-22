@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="TZt-Pi-azZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FH7-32-UTI">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="CO7-Yb-LzH"/>
+                                <segue destination="xd3-Nw-Dtv" kind="presentation" identifier="AddItem" id="CO7-Yb-LzH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -111,6 +111,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZB6-Xy-SEf" secondAttribute="trailing" id="lBC-2y-w7q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mNg-tU-bPK"/>
                     <connections>
                         <outlet property="nameTextField" destination="4XC-Od-iyf" id="QWk-PS-SqN"/>
                         <outlet property="photoImageView" destination="98L-iu-yY4" id="nRX-uA-404"/>
@@ -124,7 +125,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1076" y="136.28185907046478"/>
+            <point key="canvasLocation" x="2015.2" y="136.28185907046478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AEm-VW-Al4">
@@ -143,6 +144,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNa-s6-d7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-756" y="135.38230884557723"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wNp-aa-Rcw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xd3-Nw-Dtv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YGc-lo-zzf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="05c-NZ-Tjy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gla-SG-UE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="136.28185907046478"/>
         </scene>
     </scenes>
     <resources>
