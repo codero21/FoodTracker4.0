@@ -66,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="183.19999999999999" y="135.38230884557723"/>
         </scene>
-        <!--Meal View Controller-->
+        <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker4_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,7 +111,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ZB6-Xy-SEf" secondAttribute="trailing" id="lBC-2y-w7q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mNg-tU-bPK"/>
+                    <navigationItem key="navigationItem" title="New Meal" id="mNg-tU-bPK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Cnk-G7-UJp"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RXp-7Z-Zsn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="4XC-Od-iyf" id="QWk-PS-SqN"/>
                         <outlet property="photoImageView" destination="98L-iu-yY4" id="nRX-uA-404"/>
