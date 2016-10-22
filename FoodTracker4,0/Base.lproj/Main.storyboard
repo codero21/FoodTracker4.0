@@ -119,6 +119,7 @@
                         <outlet property="nameTextField" destination="4XC-Od-iyf" id="QWk-PS-SqN"/>
                         <outlet property="photoImageView" destination="98L-iu-yY4" id="nRX-uA-404"/>
                         <outlet property="ratingControl" destination="wdy-nG-e6Z" id="UI5-WC-ELo"/>
+                        <outlet property="saveButton" destination="RXp-7Z-Zsn" id="bqM-HC-Ox4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
