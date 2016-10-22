@@ -15,7 +15,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
-    
     /*
      This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
      or constructed as part of adding a new meal.
@@ -58,6 +57,21 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
+    }
+    // MARK: Navigation
+    
+    // This method lets you configure a view controller before it's presented.
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let name = nameTextField.text ?? ""
+            let photo = photoImageView.image
+            let rating = ratingControl.rating
+            
+            // Set the meal to be passed to MealTableViewController after the unwind segue.
+            // This code configures the meal property with the appropriate values before segue executes.
+            meal = Meal(name: name, photo: photo, rating: rating)
+            
+        }
     }
     
     // MARK: Actions
