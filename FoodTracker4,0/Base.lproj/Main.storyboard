@@ -113,7 +113,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="mNg-tU-bPK">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Cnk-G7-UJp"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RXp-7Z-Zsn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RXp-7Z-Zsn">
+                            <connections>
+                                <segue destination="0py-7s-8Rg" kind="unwind" unwindAction="unwindToMealListWithSender:" id="OhS-QI-p60"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="4XC-Od-iyf" id="QWk-PS-SqN"/>
@@ -123,6 +127,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="0py-7s-8Rg" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="CLr-In-nCI">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="bqh-ZB-2ID"/>

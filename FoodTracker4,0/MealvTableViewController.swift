@@ -69,15 +69,31 @@ class MealTableViewController: UITableViewController {
         return cell
     }
 
+//    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+//        // if let source = sender.source as? MealViewController, let meal = source.meal
+//        if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal
+//        {
+//        
+//            // Add a new meal.
+//            let newIndexPath = IndexPath(row: meals.count, section: 0)
+//            meals.append(meal)
+//            tableView.insertRows(at: [newIndexPath], with: .bottom)
+//        }
+//    }
+    
+    // TODO - something is not allowing the app to display/save new meal
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.source as?
-            MealViewController, let meal = sourceViewController.meal {
-            
+        if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal {
             // Add a new meal.
-            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            let newIndexPath = IndexPath(row: meals.count, section: 0)// IndexPath(row: meals.count, section: 0)
+            // let newIndexPath = NSIndexPath(forRow: 0, inSection: 0)
             meals.append(meal)
             tableView.insertRows(at: [newIndexPath], with: .bottom)
+            
+            // Test
+            print("Save Button Clicked")
         }
+        
     }
     
     /*
